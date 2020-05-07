@@ -9,7 +9,7 @@ let package = Package(
                  targets: ["MXSegmentedPager"])
     ],
     dependencies: [
-        /*.package(url: "https://github.com/maxep/MXPagerView.git", from: "0.2.0"),*/
+        .package(url: "https://github.com/ppacie/MXPagerView.git", from: "1.0.1"),
         .package(url: "https://github.com/ppacie/MXParallaxHeader.git", from: "1.1.1"),
         .package(url: "https://github.com/ppacie/MXSegmentedControl.git", from: "1.1.1"),
     ],
@@ -17,7 +17,7 @@ let package = Package(
         .target(
             name: "MXSegmentedPager",
             dependencies: [
-                /*"MXPagerView",*/
+                "MXPagerView",
                 "MXParallaxHeader",
                 "MXSegmentedControl"
             ], path: "MXSegmentedPager"
