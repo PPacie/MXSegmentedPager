@@ -32,8 +32,14 @@
 
 @synthesize segmentedPager = _segmentedPager;
 
-- (void)loadView {
-    self.view = self.segmentedPager;
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self.view addSubview:self.segmentedPager];
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    self.segmentedPager.frame = self.view.bounds;
 }
 
 #pragma mark Properties

@@ -364,7 +364,7 @@ SWIFT_CLASS("_TtC18MXSegmentedControl18MXSegmentedControl")
 ///
 - (MXSegment * _Nonnull)appendWithAttributedTitle:(NSAttributedString * _Nonnull)attributedTitle;
 /// Creates and append a new segment with the given image.
-/// \param title The new segment image.
+/// \param attributedTitle The new segment image.
 ///
 - (MXSegment * _Nonnull)appendWithImage:(UIImage * _Nullable)image;
 /// Selects the segment at the given index.
